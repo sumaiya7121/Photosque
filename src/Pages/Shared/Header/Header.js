@@ -16,6 +16,10 @@ const menu3 = <>
 const menu4 = <>
     <li><Link to='/blogs'>Blogs</Link></li>
 </>
+const menu5 = <>
+    <li><Link to='/logOut'>logout</Link></li>
+</>
+
 
 
     return (
@@ -30,6 +34,8 @@ const menu4 = <>
        {menu2}
        {menu4}
        {menu3}
+       {menu5}
+
       </ul>
     </div>
     <Link to='/' className="btn btn-ghost normal-case text-xl">
@@ -44,6 +50,8 @@ const menu4 = <>
    {menu2}
    {menu4}
    {menu3}
+   {menu5}
+
     </ul>
   </div>
 
