@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "635a0c0b64a6d231828942ae",
+    "service_id": "01",
+    "title": "Portrait Photography",
+    "img": "https://i.ibb.co/JqZJzGc/shallow-focus-shot-beautiful-young-female-taking-photo-with-her-camera.jpg",
+    "price": "20.00",
+    "description": "One of the most common photography styles, portrait photography, or portraiture, aims to capture the personality and mood of an individual or group. Images may be candid or posed, full body or close-ups. Either way, the subject’s face and eyes are typically in focus. Lighting and backdrop help to convey tone and emotion. Popular types of photography portraits include senior portraits, family portraits, engagement photos, and professional headshots. The best portrait photographers make clients feel completely comfortable, so that their expressions are natural and relaxed.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  },
+  {
+    "_id": "635a0c0b69a6d231228942ae",
+    "service_id": "02",
+    "title": " Photography",
+    "img": "https://i.ibb.co/c110HFn/groom-putting-ring-bride-s-finger.jpg",
+    "price": "30.00",
+    "description": "One of the most important events in many people’s lives is a wedding, and that means wedding photographers have a huge responsibility. Not only do wedding photographers need to have good camera and lighting skills, but they also must know how to work with people and capture the right emotions almost effortlessly. This is a difficult type of photography to practice, and you only get one chance to do it right, so I have a lot of respect for good wedding photographers.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  },
+  {
+    "_id": "635a0o0b64a7d231228942ae",
+    "service_id": "03",
+    "title": "Documentary Photography",
+    "img": "https://i.ibb.co/c3G4zS9/attractive-stylish-young-woman-khaki-dress-desert-traveling-africa-safari-wearing-hat-backpack-takin.jpg",
+    "price": "25.00",
+    "description": "Documentary photographers seek to convey news or information in their images. Sometimes, the photos depict a moment so striking that it crosses the line into art or otherwise causes viewers to have an emotional reaction. Documentary photography can happen anywhere, from local news stories to reporting directly from war zones. In the best of cases, documentary photos shed light on important yet little-known events, or celebrate the best examples of humanity for everyone to see. Not all documentary photos are newsworthy; sometimes, they simply document a different place or culture.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  },
+  {
+    "_id": "635a0c0b68a9d231228942ae",
+    "service_id": "04",
+    "title": "People Photography",
+    "img": "https://i.ibb.co/K9HHqLz/young-focused-european-guy-standing-harbour-looking-through-camera-while-taking-pictures-sea-yachts.jpg",
+    "price": "50.00",
+    "description": "Aside from weddings, there are broader classes of events that deserve recognition as a separate genre of photography. For example, corporate events, concerts, parades, and other celebrations all count as event photography. You can expect unpredictability and fast-paced scenes – but also interesting human interactions and sometimes (like with concert photos) very good light. Skilled event photographers are able to convey emotions so that viewers are able to relive the moment.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  },
+  {
+    "_id": "638a0c0b64a6d231228542ae",
+    "service_id": "05",
+    "title": "Commercial Photography",
+    "img": "https://i.ibb.co/cTs6btd/portrait-professional-female-photographer-street-photographing-camera-photo-shoot-photosession-city.jpg",
+    "price": "60.00",
+    "description": "Commercial photography of people is anything intended to sell a product, especially advertisements and even stock photos. Commercial photographers often simply capture the products themselves, although that’s something I’ll cover later in this article; people are still used very frequently in advertising campaigns today. Usually, the goal of commercial photography is to create images that match the emotions and message the brand in question is trying to convey. These photographers need special skills in studio lighting and visualization to make the client’s plan a reality.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  },
+  {
+    "_id": "635a0c0u64a6d231228942je",
+    "service_id": "06",
+    "title": "Fashion Photography",
+    "img": "https://i.ibb.co/S0tm6VS/excited-ginger-lady-hat-holding-straw-bag-ecstatic-long-haired-girl-summer-outfit-enjoying-good-day.jpg",
+    "price": "40.00",
+    "description": "A cousin of portraiture, but distinct enough to count as its own genre, is fashion photography. This is a fast-paced world, and the best fashion photographers are intimately knowledgeable not just about lighting and photography but also the clothing styles they’re photographing. Fashion photographs are usually intended for brands and advertisements, but not always, especially in today’s Instagram world.",
+    "facility": [
+      {
+        "name": "Minimum cost ",
+        "details": "Factors that affect quality include brightness and evenness of illumination, contrast, resolution, geometry, color fidelity and color discrimination of an observed image. Achieving the highest possible image quality relies not only on using the best available equipment, but also making correct photographic choices.."
+      },
+      {
+        "name": "Patience and Flexibility",
+        "details": "No matter how much you try to control every variable, things just won’t go your way at times. There will be days when the lighting won’t cooperate, when your models or clients will be exceptionally difficult, or when your camera just won’t give you the desired results."
+      },
+      {
+        "name": "Composition",
+        "details": "Strong composition is one of the most important keys towards creating a great final print. I am not going to go into an entire talk about the rules of composition her. But suffice to say it’s very important to understand that the idea of composition results from the aim of leading a viewer’s eyes through an image. Good composition will move a person’s eyes throughout a print in a logical and pleasing way."
+      },
+      {
+        "name": "An Eye for Detail",
+        "details": "A good photographer must have a very keen eye for detail to ensure that all elements within the photo—the lighting, the composition, the subject, and everything else in between—work together harmoniously to convey the right vision or message."
+      }
+    ]
+  }
+]
