@@ -41,7 +41,7 @@ const createUser= (email,password) =>{
   }
 
   useEffect(() => {
-    //this part will execute once the component is mounted.
+   
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
       setUser(currentUser)
       setLoading(false)
@@ -60,7 +60,8 @@ const createUser= (email,password) =>{
         createUser,
         updateName,
         signInWithGoogle,
-        logout,signin
+        logout,
+        signin
     }
     return (
 <AuthContext.Provider value={authInfo}>

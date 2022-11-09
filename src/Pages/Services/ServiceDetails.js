@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import reviewimg from '../../Assets/reviewimg.png';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 
@@ -12,14 +13,16 @@ const ServiceDetails = () => {
     e.preventDefault();
     const form=e.target;
     const name=form.name.value;
-    const textarea=form.name.value;
-    const image= user?.img || 'not found'
+    const email=user?.email || 'unregistered'
+    const textarea=form.textarea.value;
+    const image= form.image.value || 'not found'
     
     const review ={
     service:_id,
-    serviceNme: title,
-    reviewer:name,
-    message: textarea,
+    serviceName: title,
+    email,
+    name,
+    textarea,
     image
 
 
@@ -53,7 +56,9 @@ const ServiceDetails = () => {
   }
 
     return (
-    <div>    <div className="card card-side bg-base-100 shadow-xl grid grid-col-1">
+    <div>   
+      
+       <div className="card card-side bg-base-100 shadow-xl grid grid-col-1">
 <img src={img} className='px-6 rounded-xl' alt="Movie"/>
   <div className="card-body">
     <h2 className="card-title text-orange-600 text-center"> {title} </h2>
@@ -64,29 +69,43 @@ const ServiceDetails = () => {
   </div>
 </div>
 <div>
+
     {/* review section */}
-<form onSubmit={handleReview}>
-<div className='grid grid-cols-1 lg:grid-cols-2 gap-4 px-10 mt-5'>
-   <div>
-     <div className='flex flex-evenly'>
-				<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
-			</div>
-        <div><input name='name' type="text" placeholder="Your Name" className="input input-bordered border-orange-500 w-4/2 mb-2 required" /></div>
 
-        <input name='email' type="email" placeholder="email" className="input input-bordered border-orange-500 w-4/2 mb-2 required" />
-
-   </div>
+<div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
+	<div className="flex flex-col justify-between">
+		<div className="space-y-2">
+			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's Review!</h2>
+			<div className="dark:text-gray-400">Review our services</div>
+		</div>
+		<img src={reviewimg} alt="" className="p-6 " />
+	</div>
 	
-<div className='text-center'>
-       <textarea name='textarea' className="textarea  border-orange-500 w-ful text-center" placeholder="Write Your Review required">
+  
+  <form className='mt-20' onSubmit={handleReview} >
 
-       </textarea>
+	
+			<input name='name' id="name" type="text" placeholder="Your Name" className=" input input-bordered w-full p-3 mb-2 rounded border-amber-600" required/>
+		
+
+			<input name='email' id="email" type="email" placeholder='your Email' className="w-full input input-bordered p-3 rounded mb-2 border-amber-600" defaultValue={user?.email} readOnly />
+
+      <input name='image' id="image" type="url" placeholder='Your Photo URL' className="w-full input input-bordered p-3 rounded mb-2 border-amber-600"  />
+
+
+
+			<textarea name='textarea' id="message" rows="3" placeholder='Your review'  className="input input-bordered  w-full p-3 h-300 rounded border-amber-600" required></textarea>
+	
+		<div className='flex justify-center p-10'>
+    
+          <button type="submit" className="px-8 py-3 text-center font-semibold rounded-full bg-orange-600 text-white">Submit Review</button>
+    </div>
+	</form>
 </div>
-<button className="btn btn-outline border-orange-500 hover:bg-orange-700 hover:text-white px-20">Submit review</button>
-</div>
-</form>
+
 
 </div>
+
 </div>
     );
 };

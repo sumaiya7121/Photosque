@@ -1,24 +1,54 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import logo from '../../../Assets/logo.png';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Header = () => {
 
-const menu = <>
-    <li><Link to='/'>Home</Link></li>
+    const {user, logout} = useContext(AuthContext);
+
+    const handleLogout = ()=> {
+
+       logout()
+       .then(toast.warning('User loged out'))
+       .catch(err=>console.log((err)))
+    }
+
+
+
+const menuItems = <>
+
+{
+
+user?.email ?
+<>
+<li><Link to='/myreviews'>My Review</Link></li>
+<li><Link to='/'>Home</Link></li>
+<li><Link to='/services'>Services</Link></li>
+<li><Link to='/login'>Login</Link></li>
+<li><Link to='/blogs'>Blogs</Link></li>
+<li onClick={handleLogout}><Link to='/'>logout</Link></li>
+   
 </>
-const menu2 = <>
-    <li><Link to='/services'>Services</Link></li>
+:
+<>
+<li><Link to='/'>Home</Link></li>
+<li><Link to='/services'>Services</Link></li>
+<li><Link to='/blogs'>Blogs</Link></li>
+<li><Link to='/login'>Login</Link></li>
+
 </>
-const menu3 = <>
-    <li><Link to='/login'>Login</Link></li>
-</>
-const menu4 = <>
-    <li><Link to='/blogs'>Blogs</Link></li>
-</>
-const menu5 = <>
-    <li><Link to='/logOut'>logout</Link></li>
-</>
+
+
+    }
+
+
+     </>
+
+
+
+
 
 
 
@@ -30,12 +60,8 @@ const menu5 = <>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-       {menu}
-       {menu2}
-       {menu4}
-       {menu3}
-       {menu5}
-
+       {menuItems}
+      
       </ul>
     </div>
     <Link to='/' className="btn btn-ghost normal-case text-xl">
@@ -46,12 +72,8 @@ const menu5 = <>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
-   {menu}
-   {menu2}
-   {menu4}
-   {menu3}
-   {menu5}
-
+   {menuItems}
+  
     </ul>
   </div>
 
