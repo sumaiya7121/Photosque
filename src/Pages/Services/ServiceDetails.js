@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import reviewimg from '../../Assets/reviewimg.png';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
@@ -148,8 +148,8 @@ user?.email ?
 	</form>
   :
 
- <div> 
-  <h2>Please Log in For Review! </h2>
+ <div className='text-3xl text-center' > 
+  <h2>Please Log in For Review!<Link className='btn mt-3' to='/login'> Login</Link> </h2>
  </div>
 
 
