@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const ServiceCard = ({service}) => {
     const{img,price,title,description,_id}=service;
@@ -24,9 +23,7 @@ const ServiceCard = ({service}) => {
     <p>{truncateString(description,100)}</p>
     
     <div className="card-actions">
-     <Link to={`/services/${_id}`}>
-          <button type="button" className="px-8 py-3 font-semibold rounded bg-orange-600 text-white">See Details</button>
-        </Link>
+   
     </div>
   </div>
 </div>
