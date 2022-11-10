@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import login from '../Assets/login.png';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-
 const Login = () => {
   const [userEmail, setUserEmail] = useState('')
  
@@ -66,7 +65,11 @@ signin(email, password)
                     
                                 </div>
                             </form>
-                              <button onClick={handleGoogleSignin} className="bg-orange-600 py-3 rounded-lg text-white text-2xl " type='submit'> Google </button>
+
+                            
+                              <button onClick={handleGoogleSignin} className='text-center text-blue-700'  type='submit'> Google sign in  </button>
+                              
+
                                 <label className="label p-5">
                                 <h2>Don't have an Account? </h2>
                                     <Link to='/register' className="label-text-alt link link-hover text-orange-600 font-bold text-xl">Register here!</Link>

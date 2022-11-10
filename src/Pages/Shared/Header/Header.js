@@ -23,10 +23,9 @@ const menuItems = <>
 
 user?.email ?
 <>
-<li><Link to='/myreviews'>My Review</Link></li>
 <li><Link to='/'>Home</Link></li>
-<li><Link to='/services'>Services</Link></li>
-<li><Link to='/login'>Login</Link></li>
+<li><Link to='/myreviews'>My Review</Link></li>
+<li><Link to='/allservices'>Services</Link></li>
 <li><Link to='/blogs'>Blogs</Link></li>
 <li onClick={handleLogout}><Link to='/'>logout</Link></li>
    

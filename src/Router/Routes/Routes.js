@@ -55,7 +55,10 @@ const router =createBrowserRouter([
         },
         {
             path:'/allservices',
-            element:<AllServices></AllServices>
+            element:<AllServices></AllServices>,
+            loader:()=>{
+         return fetch ("http://localhost:5000/services")
+            }
         }
 
 

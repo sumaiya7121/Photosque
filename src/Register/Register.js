@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import login from '../Assets/login.png';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-
 const Register = () => {
       const { createUser, updateName} =
     useContext(AuthContext)
