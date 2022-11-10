@@ -1,13 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import reviewimg from '../../Assets/reviewimg.png';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import SingleService from '../Services/SingleService';
 
 
 const ServiceDetails = () => {
+  const {user} =useContext(AuthContext)
    const {title,price,description,img,_id}  = useLoaderData();
-   const {user} =useContext(AuthContext);
+
+   const[review,setReview] =useState([]);
+   useEffect(()=>{
+   fetch('http://localhost:5000/reviews')
+   .then(res=>res.json())
+   .then(data=>setReview(data))
+
+
+   },[])
+
+  //  console.log(review);
+
+   const selectedService = review.filter(rv => rv.service === _id)
+   console.log(selectedService);
+
    
   const handleReview =(e)=>{
     e.preventDefault();
@@ -19,6 +35,7 @@ const ServiceDetails = () => {
     
     const review ={
     service:_id,
+    createdTime: new Date().toISOString(),
     serviceName: title,
     email,
     name,
@@ -72,7 +89,29 @@ const ServiceDetails = () => {
 
     {/* review section */}
 
-<div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
+<div className="card w-full bg-base-100 shadow-xl">
+  <div className="card-body">
+
+    {
+selectedService.map(service => <SingleService
+key={_id}
+service={service}
+
+>
+
+</SingleService>
+
+
+
+
+)
+
+    }
+ 
+  </div>
+</div>
+
+<div className=" grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's Review!</h2>
@@ -80,27 +119,41 @@ const ServiceDetails = () => {
 		</div>
 		<img src={reviewimg} alt="" className="p-6 " />
 	</div>
-	
-  
-  <form className='mt-20' onSubmit={handleReview} >
+
+  <div>
+    
+>
+
+
+</div>
+ {
+user?.email ? 
+ <form className='mt-20' onSubmit={handleReview} >
 
 	
 			<input name='name' id="name" type="text" placeholder="Your Name" className=" input input-bordered w-full p-3 mb-2 rounded border-amber-600" required/>
 		
-
 			<input name='email' id="email" type="email" placeholder='your Email' className="w-full input input-bordered p-3 rounded mb-2 border-amber-600" defaultValue={user?.email} readOnly />
 
       <input name='image' id="image" type="url" placeholder='Your Photo URL' className="w-full input input-bordered p-3 rounded mb-2 border-amber-600"  />
-
-
 
 			<textarea name='textarea' id="message" rows="3" placeholder='Your review'  className="input input-bordered  w-full p-3 h-300 rounded border-amber-600" required></textarea>
 	
 		<div className='flex justify-center p-10'>
     
-          <button type="submit" className="px-8 py-3 text-center font-semibold rounded-full bg-orange-600 text-white">Submit Review</button>
+    <button type="submit" className="px-8 py-3 text-center font-semibold rounded-full bg-orange-600 text-white">Submit Review</button>
+
     </div>
+    
 	</form>
+  :
+
+ <div> 
+  <h2>Please Log in For Review! </h2>
+ </div>
+
+
+ }
 </div>
 
 
