@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const OrderRow = ({ review, handleDelete, handleStatusUpdate }) => {
+const AllReviews = ({ review, handleDelete, handleStatusUpdate }) => {
     console.log(review)
     const { _id, email,image,name,serviceName,textarea } = review;
   
@@ -30,4 +30,4 @@ const OrderRow = ({ review, handleDelete, handleStatusUpdate }) => {
     );
 };
 
-export default OrderRow;
+export default AllReviews;
