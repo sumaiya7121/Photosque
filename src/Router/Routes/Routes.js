@@ -48,7 +48,7 @@ const router =createBrowserRouter([
         element:<ServiceDetails></ServiceDetails> ,
         loader: ({params}) =>
          
-        fetch (`http://localhost:5000/services/${params.id}`)
+        fetch (`https://photosque-server.vercel.app/services/${params.id}`)
         
         },
         {
@@ -59,7 +59,7 @@ const router =createBrowserRouter([
             path:'/allservices',
             element:<AllServices></AllServices>,
             loader:()=>{
-         return fetch ("http://localhost:5000/services")
+         return fetch ("https://photosque-server.vercel.app/services")
             }
         },
         {

@@ -10,7 +10,7 @@ const MyReviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myreviews?email=${user?.email}`)
+        fetch(`https://photosque-server.vercel.app/myreviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [user?.email])
@@ -18,7 +18,7 @@ const MyReviews = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure, you want to cancel this order');
         if(proceed){
-            fetch(`http://localhost:5000/myreviews/${id}`, {
+            fetch(`https://photosque-server.vercel.app/myreviews/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
@@ -36,7 +36,7 @@ const MyReviews = () => {
 
     return (
         <div>
-            <h2 className="text-5xl">You have {reviews.length} Review</h2>
+            <h2 className="text-5xl flex justify-center align-center">You have {reviews.length} Review</h2>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     <thead>

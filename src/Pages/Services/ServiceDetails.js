@@ -27,7 +27,7 @@ const ServiceDetails = () => {
 
 
     }
-    fetch('http://localhost:5000/myreviews',{
+    fetch('https://photosque-server.vercel.app/myreviews',{
     method:'POST',
     headers:{
         'content-type':'application/json'
