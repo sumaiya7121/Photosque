@@ -5,8 +5,11 @@ import login from '../Assets/login.png';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useTitle } from "../Hooks/UseTitle";
+	
 
 const Register = () => {
+   useTitle("Register");
     const navigate = useNavigate()
   const location = useLocation()
   const from = location.state?.from?.pathname || '/'

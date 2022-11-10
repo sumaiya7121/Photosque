@@ -2,8 +2,10 @@ import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { Link } from 'react-router-dom';
+import { useTitle } from "../Hooks/UseTitle";
 
 const AllServicecard = ({service}) => {
+   useTitle("All services");
 
     const{_id,img,price,description,title} = service;
     return (

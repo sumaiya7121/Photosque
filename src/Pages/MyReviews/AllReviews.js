@@ -2,9 +2,11 @@
 
 import React from 'react';
 
+	
+
 const AllReviews = ({ review, handleDelete, handleStatusUpdate }) => {
     console.log(review)
-    const { _id, email,image,name,serviceName,textarea } = review;
+    const { _id,name,serviceName,textarea } = review;
   
 
     

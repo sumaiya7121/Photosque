@@ -3,11 +3,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import login from '../Assets/login.png';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-
+import { useTitle } from "../Hooks/UseTitle";
+	
 
 
 const Login = () => {
-
+ useTitle("Login");
  
   const navigate = useNavigate()
   const location = useLocation()

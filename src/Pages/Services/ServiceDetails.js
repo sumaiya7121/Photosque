@@ -3,16 +3,19 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import reviewimg from '../../Assets/reviewimg.png';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import { useTitle } from "../../Hooks/UseTitle";
 import SingleService from '../Services/SingleService';
-
+	 
 
 const ServiceDetails = () => {
+useTitle("Service Details");
+
   const {user} =useContext(AuthContext)
    const {title,price,description,img,_id}  = useLoaderData();
 
    const[review,setReview] =useState([]);
    useEffect(()=>{
-   fetch('http://localhost:5000/reviews')
+   fetch('https://photosque-server.vercel.app/reviews')
    .then(res=>res.json())
    .then(data=>setReview(data))
 
